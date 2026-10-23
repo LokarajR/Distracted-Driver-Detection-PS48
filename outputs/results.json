@@ -1,0 +1,302 @@
+{
+  "dataset": {
+    "total_labelled": 22424,
+    "drivers": 26,
+    "subset_images": 4136,
+    "per_driver_class": 16,
+    "class_counts_full": {
+      "c0": 2489,
+      "c1": 2267,
+      "c2": 2317,
+      "c3": 2346,
+      "c4": 2326,
+      "c5": 2312,
+      "c6": 2325,
+      "c7": 2002,
+      "c8": 1911,
+      "c9": 2129
+    }
+  },
+  "split": {
+    "train": {
+      "drivers": [
+        "p014",
+        "p015",
+        "p016",
+        "p021",
+        "p022",
+        "p024",
+        "p039",
+        "p042",
+        "p047",
+        "p049",
+        "p051",
+        "p052",
+        "p056",
+        "p061",
+        "p064",
+        "p066",
+        "p081"
+      ],
+      "images": 2720
+    },
+    "val": {
+      "drivers": [
+        "p012",
+        "p035",
+        "p045",
+        "p072"
+      ],
+      "images": 616
+    },
+    "test": {
+      "drivers": [
+        "p002",
+        "p026",
+        "p041",
+        "p050",
+        "p075"
+      ],
+      "images": 800
+    }
+  },
+  "near_duplicates": {
+    "driver_split": {
+      "median_rms": 0.14744962751865387,
+      "share_below_0.05": 0.0
+    },
+    "random_split": {
+      "median_rms": 0.049596212804317474,
+      "share_below_0.05": 0.50625
+    }
+  },
+  "validation_table": {
+    "scratch_cnn": {
+      "best val macro F1": 0.7557,
+      "best epoch": 15.0,
+      "params (M)": 2.3565,
+      "CPU latency (ms/img)": 89.8138,
+      "train time (min)": 7.9441
+    },
+    "mobilenet_v3_large": {
+      "best val macro F1": 0.7037,
+      "best epoch": 5.0,
+      "params (M)": 4.2148,
+      "CPU latency (ms/img)": 20.199,
+      "train time (min)": 3.2821
+    },
+    "resnet18": {
+      "best val macro F1": 0.8518,
+      "best epoch": 11.0,
+      "params (M)": 11.1816,
+      "CPU latency (ms/img)": 59.0826,
+      "train time (min)": 4.5387
+    },
+    "efficientnet_b0": {
+      "best val macro F1": 0.7638,
+      "best epoch": 5.0,
+      "params (M)": 4.0204,
+      "CPU latency (ms/img)": 35.5641,
+      "train time (min)": 3.6049
+    }
+  },
+  "selected_model": "resnet18",
+  "test_table": {
+    "scratch_cnn": {
+      "test accuracy": 0.7375,
+      "test macro F1": 0.7237,
+      "test log loss": 0.8176,
+      "test top-2 acc": 0.8688,
+      "params (M)": 2.3565,
+      "CPU latency (ms/img)": 89.8138,
+      "train time (min)": 7.9441
+    },
+    "mobilenet_v3_large": {
+      "test accuracy": 0.78,
+      "test macro F1": 0.7697,
+      "test log loss": 0.8026,
+      "test top-2 acc": 0.8975,
+      "params (M)": 4.2148,
+      "CPU latency (ms/img)": 20.199,
+      "train time (min)": 3.2821
+    },
+    "resnet18": {
+      "test accuracy": 0.8975,
+      "test macro F1": 0.8952,
+      "test log loss": 0.4839,
+      "test top-2 acc": 0.96,
+      "params (M)": 11.1816,
+      "CPU latency (ms/img)": 59.0826,
+      "train time (min)": 4.5387
+    },
+    "efficientnet_b0": {
+      "test accuracy": 0.855,
+      "test macro F1": 0.8522,
+      "test log loss": 0.5402,
+      "test top-2 acc": 0.9438,
+      "params (M)": 4.0204,
+      "CPU latency (ms/img)": 35.5641,
+      "train time (min)": 3.6049
+    }
+  },
+  "best_per_class": {
+    "c0": {
+      "precision": 0.6354,
+      "recall": 0.7625,
+      "f1": 0.6932,
+      "support": 80.0
+    },
+    "c1": {
+      "precision": 1.0,
+      "recall": 0.9125,
+      "f1": 0.9542,
+      "support": 80.0
+    },
+    "c2": {
+      "precision": 0.9405,
+      "recall": 0.9875,
+      "f1": 0.9634,
+      "support": 80.0
+    },
+    "c3": {
+      "precision": 0.8864,
+      "recall": 0.975,
+      "f1": 0.9286,
+      "support": 80.0
+    },
+    "c4": {
+      "precision": 0.9405,
+      "recall": 0.9875,
+      "f1": 0.9634,
+      "support": 80.0
+    },
+    "c5": {
+      "precision": 0.9747,
+      "recall": 0.9625,
+      "f1": 0.9686,
+      "support": 80.0
+    },
+    "c6": {
+      "precision": 0.9753,
+      "recall": 0.9875,
+      "f1": 0.9814,
+      "support": 80.0
+    },
+    "c7": {
+      "precision": 1.0,
+      "recall": 0.9875,
+      "f1": 0.9937,
+      "support": 80.0
+    },
+    "c8": {
+      "precision": 0.8434,
+      "recall": 0.875,
+      "f1": 0.8589,
+      "support": 80.0
+    },
+    "c9": {
+      "precision": 0.8113,
+      "recall": 0.5375,
+      "f1": 0.6466,
+      "support": 80.0
+    }
+  },
+  "most_confused": [
+    {
+      "true": "c9",
+      "pred": "c0",
+      "count": 27
+    },
+    {
+      "true": "c0",
+      "pred": "c9",
+      "count": 10
+    },
+    {
+      "true": "c9",
+      "pred": "c8",
+      "count": 7
+    },
+    {
+      "true": "c1",
+      "pred": "c3",
+      "count": 7
+    },
+    {
+      "true": "c8",
+      "pred": "c2",
+      "count": 4
+    }
+  ],
+  "per_driver_accuracy": {
+    "p002": 0.8688,
+    "p026": 0.9312,
+    "p041": 0.9125,
+    "p050": 0.8875,
+    "p075": 0.8875
+  },
+  "robustness": {
+    "clean": {
+      "test accuracy": 0.8975,
+      "test macro F1": 0.8952,
+      "drop in macro F1": 0.0
+    },
+    "low light (brightness x0.5)": {
+      "test accuracy": 0.8862,
+      "test macro F1": 0.8849,
+      "drop in macro F1": 0.0103
+    },
+    "blur (Gaussian, sigma 2)": {
+      "test accuracy": 0.8075,
+      "test macro F1": 0.7955,
+      "drop in macro F1": 0.0997
+    },
+    "low resolution (80x60 upscaled)": {
+      "test accuracy": 0.8388,
+      "test macro F1": 0.8226,
+      "drop in macro F1": 0.0726
+    }
+  },
+  "leakage_experiment": {
+    "random split (drivers shared)": {
+      "val macro F1": 0.9952,
+      "test accuracy": 0.9875,
+      "test macro F1": 0.9875,
+      "test log loss": 0.1433
+    },
+    "driver-grouped split (unseen drivers)": {
+      "val macro F1": 0.8518,
+      "test accuracy": 0.8975,
+      "test macro F1": 0.8952,
+      "test log loss": 0.4839
+    }
+  },
+  "hyperparameters": {
+    "img_size": 224,
+    "batch_size": 32,
+    "epochs_scratch": 20,
+    "epochs_head": 2,
+    "epochs_finetune": 10,
+    "patience": 4,
+    "lr_scratch": 0.001,
+    "lr_head": 0.001,
+    "lr_finetune": 0.0003,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.1,
+    "optimizer": "AdamW + OneCycleLR",
+    "seed": 42
+  },
+  "versions": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "seed": 42,
+    "quick_mode": false
+  }
+}
